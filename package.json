@@ -2,12 +2,7 @@
   "name": "comp2156",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\"",
-    "eject": "react-scripts eject"
-  },
+  "homepage": "https://TaLeVinhCo.github.io/comp2156",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TaLeVinhCo/comp2156.git"
@@ -16,9 +11,8 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TaLeVinhCo/comp2156/issues"
+    "url": "https://github.com/TaLeVinhCo/comp2156/issues",
   },
-  "homepage": "https://github.com/TaLeVinhCo/comp2156#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -28,19 +22,26 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
       "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
+
   },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
-  }
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\"",
+    "eject": "react-scripts eject",
+  },
 }
